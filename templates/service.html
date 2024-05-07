@@ -1,0 +1,52 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+  
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">BIZNING IJODIY XIZMATLARIMIZ</h1>
+            <div class="row">
+                <div class="col-lg-3 mb-2">
+                    <div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">Html<span class="d-block text-body"></span></h4>
+                        <img class="img-fluid w-100" src="{% static 'img/html.png' %}" alt="">
+                        <p class="m-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-code text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">Css<span class="d-block text-body"></span></h4>
+                        <img class="img-fluid w-100" src="{% static 'img/css.png' %}" alt="">
+                        <p class="m-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-envelope-open-text text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">Python<span class="d-block text-body"></span></h4>
+                        <img class="img-fluid w-100" src="{% static 'img/python.png' %}" alt="">
+                        <p class="m-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-edit text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">Telegram bot<span class="d-block text-body"></span></h4>
+                        <img class="img-fluid w-100" src="{% static 'img/telegram bot.png' %}" alt="">
+                        <p class="m-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+  
+    {% endblock content %}
