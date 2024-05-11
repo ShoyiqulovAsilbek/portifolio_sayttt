@@ -2,6 +2,8 @@
 {% load static %}
 <html lang="en">
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Hk5FjLYJ7l0s0T6bRjNqP5b8E3T4UmIyvSTlq12iu7+rb4On/CGW4BwtEwo/lh6P" crossorigin="anonymous">
 <head>
     <meta charset="utf-8">
     <title>💻Shoyiqulov Asilbek portifoliosi</title>
@@ -32,17 +34,18 @@
     <div class="container-fluid bg-white position-relative">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
             <a href="{% url 'home-page' %}" class="navbar-brand text-secondary">
-                <h1 class="display-4 text-uppercase">DOT.NET</h1>
+                <img style="width: 105%;height: 13vh;" src="{% static 'img/logo.png' %}" alt="">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ml-auto py-0 pr-3 border-right">
-                    <a href="{% url 'home-page' %}" class="nav-item nav-link active">Asosiy sahifa</a>
-                    <a href="{% url 'about-page' %}" class="nav-item nav-link">Biz haqimizda</a>
-                    <a href="{% url 'service-page' %}" class="nav-item nav-link">Bizning xizmatlarimiz</a>
-                    <a href="{% url 'project-page' %}" class="nav-item nav-link">Projectlar</a>
+                    <a href="{% url 'home-page' %}" class="nav-item nav-link active"><h4>Asosiy sahifa</h4></a>
+                    <a href="{% url 'about-page' %}" class="nav-item nav-link"><h4>Biz haqimizda</h4></a>
+                    <a href="{% url 'service-page' %}" class="nav-item nav-link"><h4>Bizning xizmatlarimiz</h4></a>
+                    <a href="{% url 'project-page' %}" class="nav-item nav-link"><h4>Projectlar</h4></a>
+                    <a href="{% url 'blog-page' %}" class="nav-item nav-link"><h4>Mening bilogim</h4></a>
                     <div class="nav-item dropdown">
                        
                         </div>
@@ -73,7 +76,7 @@
                 <a href="{% url 'contact-page' %}" class="btn btn-dark text-uppercase mt-1 py-3 px-5">Learn More</a>
             </div>
             <div class="col-lg-6 px-0 text-right">
-                <img class="img-fluid mt-5 mt-lg-0" src="{% static 'img/header.png' %}" alt="">
+                <img class="img-fluid mt-5 mt-lg-0" style="border: 5px solid rgb(4, 100, 100);border-radius: 1000px;width: 500px;height: 600px;margin-right: 100px;" src="{% static 'img/jdihis.jpg' %}" alt="">
             </div>
         </div>
     </div>
@@ -86,13 +89,14 @@
             <div class="row pt-5">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <a href="{% url 'home-page' %}" class="navbar-brand">
-                        <h1 class="m-0 mt-n2 text-white display-4">DOT.NET</h1>
+                        <img style="width: 120%;height: 15vh;" src="{% static 'img/logo.png' %}" alt="">
                     </a>
                     <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
                     <h6 class="text-uppercase text-white py-2">Ortimizdan yuring
                     </h6>
                     <div class="d-flex justify-content-start">
-                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square" href="https://www.instagram.com/sifatedu_navoi"><i style="margin-left: -5px;font-size: 27px;" class="fab fa-instagram"></i></a>
+                        <a style="margin-left: 20px;" class="btn btn-lg btn-primary btn-lg-square" href="https://github.com/ShoyiqulovAsilbek"><i style="font-size: 25px;margin-left: -6px;" class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5">
@@ -109,6 +113,7 @@
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Biz haqimizda</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Bizning xizmatlarimiz</a>
                         <a class="text-white-50" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Biz bilan bog'lanish</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Mening blogim</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5">
